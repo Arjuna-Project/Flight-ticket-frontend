@@ -81,17 +81,21 @@ const Home = () => {
 
         <Container maxWidth="lg" className="relative z-10">
           {/* Section heading */}
-          <div className="text-center mb-20">
+          <div className="text-center mb-20 flex flex-col items-center gap-4">
             <Typography
               variant="h2"
-              className="text-slate-900 font-extrabold mb-5 tracking-tight text-[2rem] sm:text-[3rem]"
+              className="text-slate-900 font-extrabold tracking-tight text-[2rem] sm:text-[3rem] max-w-3xl mx-auto"
             >
               Why Fly With{' '}
               <span className="text-blue-600">
                 SkyBooker?
               </span>
             </Typography>
-            <Typography variant="h6" className="text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed text-[1.125rem]">
+            
+            <Typography
+              variant="h6"
+              className="text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed text-[1.125rem]"
+            >
               Experience a meticulously engineered travel platform tailored to make your flight reservations effortless and reliable.
             </Typography>
           </div>
