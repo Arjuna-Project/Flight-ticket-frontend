@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    @apply antialiased bg-gray-50 text-gray-900 m-0 p-0;
+    font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  #root {
+    @apply flex flex-col min-h-screen w-full;
+  }
+  
+  /* Adding some premium global styles */
+  ::selection {
+    @apply bg-blue-500/30 text-blue-900;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/30 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:bg-slate-900/80 dark:border-slate-800 flex flex-col transition-all duration-300;
+  }
+  
+  .glass-card:hover {
+    @apply shadow-[0_8px_30px_rgb(0,0,0,0.08)] -translate-y-1;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400;
+  }
+  
+  .bg-gradient-hero {
+    @apply bg-gradient-to-br from-blue-900 via-slate-800 to-indigo-900;
+  }
+}
