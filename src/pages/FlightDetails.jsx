@@ -70,7 +70,7 @@ const FlightDetails = () => {
         flight,
         passengerCount,
         selectedSeats,
-        totalPrice: flight.price * passengerCount
+        totalPrice: (flight.price ?? 0) * passengerCount
       }
     });
   };
@@ -111,8 +111,8 @@ const FlightDetails = () => {
                 
                 <div className="space-y-6">
                   <div className="flex justify-between items-center text-[17px]">
-                    <Typography className="text-slate-500 font-medium">Base Fare ({passengerCount} × ₹{flight.price.toLocaleString()})</Typography>
-                    <Typography className="font-bold text-slate-800">₹{(flight.price * passengerCount).toLocaleString()}</Typography>
+                    <Typography className="text-slate-500 font-medium">Base Fare ({passengerCount} × ₹{(flight.price ?? 0).toLocaleString()})</Typography>
+                    <Typography className="font-bold text-slate-800">₹{((flight.price ?? 0) * passengerCount).toLocaleString()}</Typography>
                   </div>
                   <div className="flex justify-between items-center text-[17px]">
                     <Typography className="text-slate-500 font-medium">Taxes & Surcharges</Typography>
@@ -123,7 +123,7 @@ const FlightDetails = () => {
                     <div className="flex justify-between items-end">
                       <Typography className="font-black text-slate-900 text-sm tracking-wide uppercase">Total Amount</Typography>
                       <Typography className="font-black text-blue-600 text-3xl leading-none">
-                        ₹{((flight.price * passengerCount) + (passengerCount * 1250)).toLocaleString()}
+                        ₹{(((flight.price ?? 0) * passengerCount) + (passengerCount * 1250)).toLocaleString()}
                       </Typography>
                     </div>
                   </div>

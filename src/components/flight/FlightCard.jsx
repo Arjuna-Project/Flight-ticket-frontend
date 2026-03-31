@@ -73,7 +73,7 @@ const FlightCard = ({ flightInstance, onSelect }) => {
         <div className="w-full lg:w-1/4 flex flex-col items-center lg:items-end justify-center border-t lg:border-t-0 lg:border-l border-slate-100 pt-8 lg:pt-0 pl-0 lg:pl-10">
           <Typography className="text-slate-400 font-bold text-xs uppercase tracking-widest mb-1">From</Typography>
           <Typography className="font-black text-slate-900 text-[28px] tracking-tight leading-none mb-5">
-            ₹{price.toLocaleString()}
+            ₹{(price ?? 0).toLocaleString()}
           </Typography>
           <button 
             onClick={(e) => { e.stopPropagation(); onSelect(flightInstance); }} 
