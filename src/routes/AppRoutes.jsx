@@ -6,11 +6,12 @@ import FlightDetails from '../pages/FlightDetails';
 import Booking from '../pages/Booking';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
+import MyBookings from '../pages/MyBookings';
 import AdminDashboard from '../pages/admin/AdminDashboard';
 import AdminUsers from '../pages/admin/AdminUsers';
 import AdminBookings from '../pages/admin/AdminBookings';
 import AdminFlights from '../pages/admin/AdminFlights';
-import { AdminRoute } from './ProtectedRoute';
+import { AdminRoute, ProtectedRoute } from './ProtectedRoute';
 
 const AppRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const AppRoutes = () => {
       <Route path="/booking" element={<Booking />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/my-bookings" element={<ProtectedRoute><MyBookings /></ProtectedRoute>} />
 
       <Route path="/admin" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
       <Route path="/admin/users" element={<AdminRoute><AdminUsers /></AdminRoute>} />

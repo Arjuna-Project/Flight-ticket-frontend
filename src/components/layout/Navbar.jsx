@@ -37,6 +37,15 @@ const Navbar = () => {
                 Hello, <span className="text-slate-900 font-bold">{user.name}</span>
               </Typography>
 
+              <Button
+                component={Link}
+                to="/my-bookings"
+                variant="text"
+                className="text-slate-600 hover:text-blue-600 hover:bg-blue-50 font-bold px-4 rounded-full transition-colors hidden sm:flex items-center gap-1.5"
+              >
+                My Bookings
+              </Button>
+
               {isAdmin && (
                 <Button 
                   component={Link} 
