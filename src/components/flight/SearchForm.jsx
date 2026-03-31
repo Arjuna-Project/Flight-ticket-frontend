@@ -72,6 +72,7 @@ const SearchForm = ({ onSearch }) => {
               value={date}
               onChange={(e) => setDate(e.target.value)}
               required
+              inputProps={{ min: new Date().toISOString().split('T')[0] }}
               className="w-full bg-slate-50 rounded-xl"
             />
             <TextField
