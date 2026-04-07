@@ -31,7 +31,7 @@ const FlightResults = () => {
         const data = await flightService.searchFlights(searchParams);
         setFlights(data);
       } catch (err) {
-        setError('Failed to fetch flights. Please try again.');
+        setError('Failed to fetch flights. Please try again.',err);
       } finally {
         setLoading(false);
       }

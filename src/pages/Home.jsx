@@ -102,7 +102,7 @@ const Home = () => {
 
           {/* Feature cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map(({ Icon, iconBg, iconColor, title, desc }) => (
+            {features.map(({ iconBg, iconColor, title, desc }) => (
               <div
                 key={title}
                 className="group flex flex-col items-center text-center p-10 rounded-3xl border border-slate-100 bg-white/70 backdrop-blur-sm shadow-sm hover:shadow-2xl hover:bg-white hover:-translate-y-1.5 transition-all duration-300"
