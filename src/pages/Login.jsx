@@ -40,7 +40,7 @@ const Login = () => {
             <FlightIcon className="text-white text-[40px] rotate-45" />
           </div>
           <Typography variant="h4" className="font-black tracking-tight text-slate-900">
-            SkyBooker
+            AeroHUB
           </Typography>
           <Typography variant="body1" className="text-slate-500 mt-2 font-medium">
             Welcome back! Please enter your details.

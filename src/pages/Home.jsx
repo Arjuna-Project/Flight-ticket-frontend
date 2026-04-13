@@ -63,7 +63,7 @@ const Home = () => {
             variant="h6"
             className="text-blue-50 font-medium mb-10 drop-shadow-md max-w-2xl mx-auto leading-relaxed opacity-95 text-[1rem] sm:text-[1.125rem]"
           >
-            Discover unparalleled flight experiences to your dream destinations at unbeatable prices. Book smarter with SkyBooker today.
+            Discover unparalleled flight experiences to your dream destinations at unbeatable prices. Book smarter with AeroHUB today.
           </Typography>
         </div>
       </Box>
@@ -88,7 +88,7 @@ const Home = () => {
             >
               Why Fly With{' '}
               <span className="text-blue-600">
-                SkyBooker?
+                AeroHUB?
               </span>
             </Typography>
             

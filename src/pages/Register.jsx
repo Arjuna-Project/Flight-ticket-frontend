@@ -52,7 +52,7 @@ const Register = () => {
             Create Account
           </Typography>
           <Typography className="text-center text-slate-500 mb-8 font-medium">
-            Join SkyBooker for the best flights and deals.
+            Join AeroHUB for the best flights and deals.
           </Typography>
 
           {error && (

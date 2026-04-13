@@ -48,7 +48,7 @@ const AdminLayout = ({ children }) => {
             <FlightTakeoffIcon className="text-white text-[18px]" />
           </Box>
           <Box>
-            <Typography className="text-slate-900 font-bold text-base leading-none tracking-tight">SkyBooker</Typography>
+            <Typography className="text-slate-900 font-bold text-base leading-none tracking-tight">AeroHUB</Typography>
             <Typography className="text-slate-400 font-medium text-[9px] tracking-widest uppercase mt-1">Admin</Typography>
           </Box>
         </Box>

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="col-span-1 md:col-span-2 pr-8">
           <div className="flex items-center gap-2 mb-4 text-white">
             <FlightTakeoffIcon fontSize="medium" className="text-blue-500" />
-            <Typography variant="h6" className="font-bold tracking-tight">SkyBooker</Typography>
+            <Typography variant="h6" className="font-bold tracking-tight">AeroHUB</Typography>
           </div>
           <Typography variant="body2" className="text-slate-400 leading-relaxed mb-6 max-w-sm">
             Your premium travel partner. We make exploring the world affordable, comfortable, and completely seamless.
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-12 pt-8 border-t border-slate-800/60 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-        <p>&copy; {new Date().getFullYear()} SkyBooker. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} AeroHUB. All rights reserved.</p>
         <p className="mt-4 md:mt-0">Designed with modern aesthetics.</p>
       </div>
     </Box>

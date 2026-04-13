@@ -25,7 +25,7 @@ const Navbar = () => {
             <FlightTakeoffIcon className="text-white text-[20px] group-hover:-rotate-12 transition-transform duration-300" />
           </Box>
           <Typography variant="h6" className="font-extrabold tracking-tight text-slate-800 group-hover:text-blue-600 transition-colors">
-            SkyBooker
+            AeroHUB
           </Typography>
         </Link>
 
